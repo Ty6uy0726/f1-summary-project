@@ -36,7 +36,7 @@ def main():
         positions = pd.to_numeric(driver_races["position"], errors='coerce').to_numpy(dtype=float) # type: ignore
 
         #print(races_id)
-        print(positions)
+        #print(positions)
         
         wins = sum(positions == 1)
         podiums = sum(positions <= 3)
